@@ -44,21 +44,19 @@ public class SearchController {
 		return redirect;
 	}
 
-	@ResponseStatus(value=HttpStatus.INTERNAL_SERVER_ERROR)
-	@ExceptionHandler(NullPointerException.class)
-	public String exceptionHandlerNull(Model m)
-	{
-		m.addAttribute("msg","Null pointer exception has occured");
-		return "exception";
-	}
-	
-	@ResponseStatus(value=HttpStatus.BAD_REQUEST)
-	@ExceptionHandler(Exception.class)
-	public String exceptionHandlerGeneric(Model m)
-	{
-		m.addAttribute("msg","Exception has occured");
-		return "exception";
-	}
-
-
-}
+	/*
+	 * @ResponseStatus(value=HttpStatus.INTERNAL_SERVER_ERROR)
+	 * 
+	 * @ExceptionHandler(NullPointerException.class) public String
+	 * exceptionHandlerNull(Model m) {
+	 * m.addAttribute("msg","Null pointer exception has occured"); return
+	 * "exception"; }
+	 * 
+	 * @ResponseStatus(value=HttpStatus.BAD_REQUEST)
+	 * 
+	 * @ExceptionHandler(Exception.class) public String
+	 * exceptionHandlerGeneric(Model m) {
+	 * m.addAttribute("msg","Exception has occured"); return "exception"; }
+	 * 
+	 * 
+	 */}
