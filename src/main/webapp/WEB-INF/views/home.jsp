@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,7 +13,7 @@
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
 
-<link href="<c:url value="/resources/css/Style.css"/>" >
+<link href="<c:url value="/resources/css/Style.css"/>">
 <script src="<c:url value="/resources/Js/script.js"/>"></script>
 
 
@@ -23,11 +23,13 @@
 <body>
 	<div class="container">
 
+		<h1 class="text-center m-4">This is my home page</h1>
 		<div class="card mx-auto mt-5 bg-primary" style="width: 50%;">
 
 			<div class="card-body py-5">
 
-				<h3 class="text-center text-white " style="text-transform:uppercase">My Search</h3>
+				<h3 class="text-center text-white "
+					style="text-transform: uppercase">My Search</h3>
 				<form action="search" class="mt-3">
 
 
